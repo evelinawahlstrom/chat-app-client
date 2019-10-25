@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {url} from '../constants'
+import ChatroomForm from './ChatroomForm'
 
 export default class Chatroom extends Component {
     state = {
@@ -30,6 +31,7 @@ export default class Chatroom extends Component {
                  this.state.messages.map(message => <li key={message.id}> {message.message} </li>)
              }
              </ul>
+             <ChatroomForm/>
             </div>
         )
     }
